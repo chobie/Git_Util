@@ -39,4 +39,14 @@ class File
 	{
 		$this->groups[] = $group;
 	}
+	
+	public function getGroups()
+	{
+		return $this->groups;
+	}
+	
+	public function getCommit($commit_id)
+	{
+		return $this->commits[$commit_id];
+	}
 }

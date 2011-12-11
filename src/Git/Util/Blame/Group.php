@@ -41,8 +41,23 @@ class Group
 		$this->commit_id = $commit_id;
 	}
 	
+	public function getCommitId()
+	{
+		return $this->commit_id;
+	}
+	
 	public function add($string)
 	{
 		$this->lines[] = $string;
+	}
+	
+	public function getLines()
+	{
+		return $this->lines;
+	}
+	
+	public function count()
+	{
+		return $this->count;
 	}
 }

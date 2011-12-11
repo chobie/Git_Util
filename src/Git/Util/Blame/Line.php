@@ -37,4 +37,14 @@ class Line
 		$this->master_number = $master;
 		$this->line = $line;
 	}
+	
+	public function __toString()
+	{
+		return $this->line;
+	}
+	
+	public function getLineNumber()
+	{
+		return $this->master_number;
+	}
 }

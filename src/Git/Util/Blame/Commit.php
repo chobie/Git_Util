@@ -44,4 +44,9 @@ class Commit
 	{
 		$this->meta[$key] = $value;
 	}
+	
+	public function get($key)
+	{
+		return $this->meta[$key];
+	}
 }
