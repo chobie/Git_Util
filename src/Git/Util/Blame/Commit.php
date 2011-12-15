@@ -45,6 +45,9 @@ class Commit
 		$this->meta[$key] = $value;
 	}
 	
+	/**
+	 * get specified property
+	 */
 	public function get($key)
 	{
 		return $this->meta[$key];
